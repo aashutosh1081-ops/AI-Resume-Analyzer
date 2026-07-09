@@ -1,0 +1,170 @@
+body{
+    background:#f4f7fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.card{
+    transition:all .3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px) scale(1.02);
+    box-shadow:0 18px 40px rgba(0,0,0,.18);
+}
+
+.container{
+    margin-top:20px;
+}
+
+.btn{
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+pre{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    border:1px solid #ddd;
+}
+/* ===== Premium Result Page ===== */
+
+.result-card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    margin-bottom:25px;
+}
+
+.result-card:hover{
+    transform:translateY(-4px);
+}
+
+.summary-card{
+    border-radius:18px;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.ats-card{
+    background:linear-gradient(135deg,#28a745,#20c997);
+}
+
+.job-card{
+    background:linear-gradient(135deg,#0d6efd,#6ea8fe);
+}
+
+.ai-card{
+    background:linear-gradient(135deg,#6f42c1,#b197fc);
+}
+
+.section-title{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.resume-box{
+    background:#fafafa;
+    border-radius:15px;
+    border:1px solid #ddd;
+    padding:20px;
+    max-height:450px;
+    overflow-y:auto;
+}
+
+.skill-badge{
+    background:#198754;
+    color:white;
+    font-size:15px;
+    padding:10px 18px;
+    border-radius:50px;
+    margin:6px;
+    display:inline-block;
+}
+
+.ai-section{
+    white-space:pre-line;
+    line-height:1.9;
+    font-size:15px;
+    color:#444;
+}
+}
+
+.progress{
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    animation:grow 1.5s ease;
+    font-weight:bold;
+}
+.navbar-brand{
+    font-size:1.5rem;
+    letter-spacing:.5px;
+}
+
+.navbar .btn{
+    border-radius:8px;
+    font-weight:600;
+}
+
+@keyframes grow{
+
+    from{
+        width:0;
+    }
+
+}
+
+body{
+    animation:fadeIn .6s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+footer{
+    margin-top:60px;
+}
+
+footer h5{
+    font-weight:700;
+}
+
+footer p{
+    color:#dcdcdc;
+}
+
+footer small{
+    color:#bdbdbd;
+    letter-spacing:.5px;
+}
