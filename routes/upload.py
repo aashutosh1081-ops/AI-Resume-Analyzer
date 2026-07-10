@@ -52,7 +52,11 @@ def upload_resume():
 
             filename = secure_filename(file.filename)
 
-            file_path = os.path.join("uploads", filename)
+            UPLOAD_FOLDER = "uploads"
+
+            os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+
+            file_path = os.path.join(UPLOAD_FOLDER, filename)
 
             file.save(file_path)
 
@@ -81,6 +85,8 @@ def upload_resume():
 
             pdf_filename = f"{uuid.uuid4()}.pdf"
 
+            os.makedirs("reports", exist_ok=True)
+            
             generate_pdf_report(
                 pdf_filename,
                 ats_score,
